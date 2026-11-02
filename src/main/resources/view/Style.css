@@ -1,0 +1,19 @@
+.label {
+    -fx-font: Segoe UI;
+    -fx-text-fill: white;
+}
+
+.boderpane {
+    -fx-background-color: Black;
+}
+
+.button {
+    -fx-background-color:  #3c9426;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #2a782f;
+    -fx-cursor: hand;
+}
