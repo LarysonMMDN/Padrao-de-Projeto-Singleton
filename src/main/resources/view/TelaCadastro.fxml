@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #313331;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #313331;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laryson.martins.controller.CadastroController">
     <top>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3c9426;" BorderPane.alignment="CENTER">
          <children>
@@ -31,43 +31,43 @@
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Label>
-            <TextField maxWidth="170.0" minHeight="25.0" />
+            <TextField fx:id="tfNome" maxWidth="170.0" minHeight="25.0" />
             <Label maxWidth="170.0" text="Data de Nascimento" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Label>
-            <DatePicker maxWidth="170.0" minHeight="25.0" />
+            <DatePicker fx:id="dpDataNascimento" maxWidth="170.0" minHeight="25.0" />
             <Label maxWidth="170.0" text="Sexo" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Label>
-            <ComboBox maxWidth="170.0" minHeight="25.0" prefWidth="150.0" />
+            <ComboBox id="cbSexo" fx:id="cbSexo" maxWidth="170.0" minHeight="25.0" prefWidth="150.0" />
             <Label maxWidth="170.0" text="Telefone" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Label>
-            <TextField maxWidth="170.0" minHeight="25.0" />
+            <TextField fx:id="tfTelefone" maxWidth="170.0" minHeight="25.0" />
             <Label maxWidth="170.0" text="Estado civil" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="15.0" />
                </font>
             </Label>
-            <ComboBox maxWidth="170.0" minHeight="25.0" prefWidth="150.0" />
+            <ComboBox id="cbEstadoCivil" fx:id="cbEstadoCivil" maxWidth="170.0" minHeight="25.0" prefWidth="150.0" />
          </children>
       </VBox>
    </center>
    <bottom>
       <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Salvar">
+            <Button fx:id="bntSalvar" mnemonicParsing="false" onAction="#SalvarDados" text="Salvar">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Voltar">
+            <Button fx:id="bntVoltar" mnemonicParsing="false" text="Voltar">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
@@ -78,8 +78,11 @@
    <left>
       <VBox alignment="CENTER" prefHeight="234.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" style="visibility: true;" />
-            <Button mnemonicParsing="false" text="Selecione a foto de perfil" />
+            <ImageView fx:id="imgPerfil" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="visibility: true;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></ImageView>
+            <Button fx:id="bntSelecionarFotoPerfil" mnemonicParsing="false" onAction="#selecionarImagem" text="Selecione a foto de perfil" />
          </children>
       </VBox>
    </left>
