@@ -77,7 +77,7 @@
                               <Insets />
                            </opaqueInsets>
                         </Label>
-                        <Label fx:id="dataNascimetoExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                        <Label fx:id="dataNascimentoExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="Segoe UI" size="18.0" />
                            </font>
@@ -238,6 +238,9 @@
    <left>
        <VBox alignment="CENTER" prefHeight="340.0" prefWidth="200.0">
           <ImageView fx:id="imagemExibicao" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+             <image>
+                <Image url="@../imagens/SemPerfil.png" />
+             </image>
              <BorderPane.margin>
                 <Insets left="20.0" top="50.0" />
              </BorderPane.margin>
@@ -245,12 +248,12 @@
                <Insets bottom="10.0" />
             </VBox.margin>
           </ImageView>
-         <Button mnemonicParsing="false" prefWidth="150.0" text="Editar">
+         <Button onAction="#bntTelaCadastro" mnemonicParsing="false" prefWidth="150.0" text="Editar">
             <VBox.margin>
                <Insets bottom="10.0" />
             </VBox.margin>
          </Button>
-         <Button mnemonicParsing="false" prefWidth="150.0" text="Voltar">
+         <Button onAction="#bntVoltarTelaPrincipal" mnemonicParsing="false" prefWidth="150.0" text="Voltar">
             <VBox.margin>
                <Insets bottom="10.0" />
             </VBox.margin>

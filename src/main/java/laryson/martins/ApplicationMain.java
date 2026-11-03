@@ -16,26 +16,22 @@ public class ApplicationMain extends Application {
     @FXML
     private Button bntVisualizarCadastro;
 
-    private String telaAtual = "TelaPrincipal.fxml";
-
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Navegacao.trocarTela("/view/" + telaAtual, primaryStage);
+        Navegacao.trocarTela("/view/TelaPrincipal.fxml", primaryStage);
 
     }
 
     @FXML
     public void abrirTelaCadastro() throws IOException {
         Stage stage = (Stage) bntCadastro.getScene().getWindow();
-        telaAtual = "TelaCadastro.fxml";
-        Navegacao.trocarTela("/view/" + telaAtual, stage);
+        Navegacao.trocarTela("/view/TelaCadastro.fxml", stage);
     }
 
     @FXML
     public void abrirTelaExibicao() throws IOException {
         Stage stage = (Stage) bntCadastro.getScene().getWindow();
-        telaAtual = "TelaExibicao.fxml";
-        Navegacao.trocarTela("/view/" + telaAtual, stage);
+        Navegacao.trocarTela("/view/TelaExibicao.fxml", stage);
     }
 
     static void Main(String args) {

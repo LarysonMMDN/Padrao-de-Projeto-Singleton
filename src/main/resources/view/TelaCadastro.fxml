@@ -6,6 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -16,7 +17,7 @@
     <top>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3c9426;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Cadastro">
+            <Label text="Dados cadastrais">
                <font>
                   <Font name="Segoe UI Bold" size="27.0" />
                </font>
@@ -78,7 +79,10 @@
    <left>
       <VBox alignment="CENTER" prefHeight="234.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="imgPerfil" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="visibility: true;">
+            <ImageView fx:id="imgPerfil" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/SemPerfil.png" />
+               </image>
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin></ImageView>

@@ -34,18 +34,21 @@ public class CadastroController {
     @FXML
     public void initialize() {
         if (pessoa.getNome() != null){
-            String sexo = "Não informado";
+            String sexo = "";
             if (pessoa.getSexo() == 'M'){
                 sexo = "Masculino";
             } else if (pessoa.getSexo() == 'F'){
                 sexo = "Feminino";
             }
+            if (pessoa.getImagem() != null){
+                imgPerfil.setImage(pessoa.getImagem());
+            }
+
             tfNome.setText(pessoa.getNome());
             dpDataNascimento.setValue(pessoa.getDataNascimento());
             cbSexo.setValue(sexo);
             tfTelefone.setText(pessoa.getTelefone());
             cbEstadoCivil.setValue(pessoa.getEstadoCivil());
-            imgPerfil.setImage(pessoa.getImagem());
         }
         cbSexo.getItems().addAll("Masculino", "Feminino");
         cbEstadoCivil.getItems().addAll(
@@ -56,21 +59,16 @@ public class CadastroController {
     }
     @FXML
     private void selecionarImagem() {
-
         FileChooser fileChooser = new FileChooser();
-
         fileChooser.setTitle("Selecionar imagem");
-
         fileChooser.getExtensionFilters().add(
                 new FileChooser.ExtensionFilter(
                         "Imagens", "*.png", "*.jpg", "*.jpeg"
                 )
         );
-
         File arquivo = fileChooser.showOpenDialog(
                 imgPerfil.getScene().getWindow()
         );
-
         if (arquivo != null) {
             Image imagem = new Image(arquivo.toURI().toString());
             imgPerfil.setImage(imagem);
@@ -80,10 +78,10 @@ public class CadastroController {
 
     @FXML
     public void SalvarDados(){
-        char sexo;
+        char sexo = 'N';
         if (cbSexo.getValue() == "Masculino"){
             sexo = 'M';
-        } else {
+        } else if (cbSexo.getValue() == "Feminino"){
             sexo = 'F';
         }
         pessoa.setNome(tfNome.getText());
@@ -91,7 +89,7 @@ public class CadastroController {
         pessoa.setSexo(sexo);
         pessoa.setTelefone(tfTelefone.getText());
         pessoa.setEstadoCivil(cbEstadoCivil.getValue());
-        System.out.println(pessoa);
+
     }
     @FXML
     public void bntVoltarTelaPrincipal() throws IOException {
