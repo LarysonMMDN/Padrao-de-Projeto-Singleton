@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #313331;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laryson.martins.controller.ExibicaoController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="430.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin></ImageView>
+                  <VBox prefHeight="44.0" prefWidth="350.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: grey;" text="Nome" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label fx:id="nomeExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER_LEFT" prefHeight="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="70.0" prefWidth="375.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: grey;" text="Data de nascimento" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label fx:id="dataNascimetoExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER_LEFT" prefHeight="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/3.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="70.0" prefWidth="375.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: grey;" text="Gênero" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label fx:id="sexoExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER_LEFT" prefHeight="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/4.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="70.0" prefWidth="375.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: grey;" text="Telefone" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label fx:id="telefoneExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER_LEFT" prefHeight="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/5.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="70.0" prefWidth="375.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: grey;" text="Estado Civil" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label fx:id="estadoCivilExibicao" alignment="CENTER" contentDisplay="CENTER" text="Não cadastrado" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+        </VBox>
+    </center>
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #3c9426;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" text="Dados do perfil" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="30.0" />
+                    </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+                </Label>
+            </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </HBox>
+    </top>
+   <left>
+       <VBox alignment="CENTER" prefHeight="340.0" prefWidth="200.0">
+          <ImageView fx:id="imagemExibicao" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+             <BorderPane.margin>
+                <Insets left="20.0" top="50.0" />
+             </BorderPane.margin>
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+          </ImageView>
+         <Button mnemonicParsing="false" prefWidth="150.0" text="Editar">
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" prefWidth="150.0" text="Voltar">
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+         </Button>
+       </VBox>
+   </left>
+</BorderPane>

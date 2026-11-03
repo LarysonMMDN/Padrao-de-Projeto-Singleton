@@ -67,7 +67,7 @@
                   <Insets right="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="bntVoltar" mnemonicParsing="false" text="Voltar">
+            <Button fx:id="bntVoltar" mnemonicParsing="false" onAction="#bntVoltarTelaPrincipal" text="Voltar">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>

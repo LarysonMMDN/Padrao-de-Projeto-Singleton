@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #313331;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #313331;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="laryson.martins.ApplicationMain">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="150.0" minHeight="35.0" mnemonicParsing="false" stylesheets="@Style.css" text="Cadastro" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="bntCadastro" onAction="#abrirTelaCadastro" alignment="CENTER" contentDisplay="CENTER" maxWidth="150.0" minHeight="35.0" mnemonicParsing="false" stylesheets="@Style.css" text="Cadastro" textAlignment="CENTER" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
@@ -20,7 +20,7 @@
                   <Font name="Segoe UI" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="150.0" minHeight="35.0" mnemonicParsing="false" stylesheets="@Style.css" text="Visualizar Cadastro" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="bntVisualizarCadastro" onAction="#abrirTelaExibicao" alignment="CENTER" contentDisplay="CENTER" maxWidth="150.0" minHeight="35.0" mnemonicParsing="false" stylesheets="@Style.css" text="Visualizar Cadastro" textAlignment="CENTER" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>

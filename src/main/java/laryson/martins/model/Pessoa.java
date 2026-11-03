@@ -13,7 +13,7 @@ public class Pessoa {
     private Image imagem;
     private static Pessoa pessoa;
 
-    public Pessoa() {
+    private Pessoa() {
     }
 
     private Pessoa(String nome, LocalDate dataNascimento, char sexo, String telefone, String estadoCivil, Image imagem) {
